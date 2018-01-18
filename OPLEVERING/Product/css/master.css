@@ -1,0 +1,160 @@
+body, html {
+  font-family: sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.videoBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	z-index: -1;
+  overflow: hidden;
+}
+
+.videoBox video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper {
+  transition: 1s all;
+  width: 60vw;
+  height: 70vh;
+  margin: 10vh auto;
+  padding: 3rem;
+  background-color: rgba(23, 32, 73, 0.3);
+}
+
+.wrapper:hover {
+  /*transform: scale(1.01);*/
+  background-color: rgba(23, 32, 73, 0.7);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h2 {
+  font-family: 'Faster One', cursive;
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem auto;
+  margin-top: 2rem;
+}
+
+h3 {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+#notify {
+  line-height: 1.5rem;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #d33;
+}
+
+#group_logo {
+  will-change: transform;
+  transition: 0.5s all ease-in-out;
+  margin: auto;
+}
+
+#group_logo img {
+  transition: all 0.3s;
+  width: 5rem;
+}
+
+#buttonsBox {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.start_button {
+  transition: 0.3s all;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: #efc200;
+  border-radius: 5px;
+  cursor: pointer;
+  border: #f9a100 outset;
+}
+
+.start_button:hover {
+  background-color: #fc0;
+}
+
+.start_button:hover #group_logo{
+  transform: rotate(60deg);
+}
+
+.start_button:active {
+  border: #f9a100 inset;
+}
+
+@media screen and (max-height: 960px) {
+  .wrapper {
+    transition: 1s all;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0rem;
+    background-color: rgba(23, 32, 73, 0);
+  }
+
+  .wrapper:hover {
+    background-color: rgba(23, 32, 73, 0);
+  }
+
+  main {
+    font-size: 0.9rem;
+    width: 80%;
+    margin: auto;
+    padding: 0rem;
+    text-align: center;
+  }
+
+  #group_logo img {
+    width: 3rem;
+    margin-top: 2rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  #notify {
+    display: none;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+}
